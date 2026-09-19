@@ -1,4 +1,4 @@
-package net.worseuserr.effortlessbuilding.screen;
+package net.worseuserr.effortlessbuilding.menu;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import com.mojang.blaze3d.vertex.BufferBuilder;
@@ -13,8 +13,10 @@ import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.resources.language.I18n;
+import net.minecraft.client.resources.sounds.SimpleSoundInstance;
 import net.minecraft.core.Direction;
 import net.minecraft.network.chat.Component;
+import net.minecraft.sounds.SoundEvents;
 import net.worseuserr.effortlessbuilding.AllIcons;
 import net.worseuserr.effortlessbuilding.buildmode.BuildModeEnum;
 import net.worseuserr.effortlessbuilding.buildmode.BuildModes;
@@ -23,6 +25,9 @@ import net.worseuserr.effortlessbuilding.buildmode.ModeOptions;
 import net.worseuserr.effortlessbuilding.buildmode.ModeOptions.*;
 import net.worseuserr.effortlessbuilding.network.BuildModeHintC2SPacket;
 import net.worseuserr.effortlessbuilding.network.PacketHandler;
+import net.worseuserr.effortlessbuilding.screen.ClientConfigScreen;
+import net.worseuserr.effortlessbuilding.screen.ModifiersScreen;
+import net.worseuserr.effortlessbuilding.screen.ServerConfigScreen;
 import net.worseuserr.effortlessbuilding.utilities.KeyBindings;
 import org.joml.Vector4f;
 import org.lwjgl.opengl.GL11;
@@ -501,10 +506,8 @@ public class RadialMenu extends Screen {
 	}
 
 	public static void playRadialMenuSound() {
-//		final float volume = 0.1f;
-//		if (volume >= 0.0001f) {
-//			Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK, volume));
-//		}
+		final float volume = 0.1f;
+		Minecraft.getInstance().getSoundManager().play(SimpleSoundInstance.forUI(SoundEvents.UI_BUTTON_CLICK.value(), 1.0f, volume));
 	}
 
 	private static class MenuButton {

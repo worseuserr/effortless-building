@@ -21,7 +21,7 @@ import net.worseuserr.effortlessbuilding.network.RedoPacket;
 import net.worseuserr.effortlessbuilding.render.RenderHandler;
 import net.worseuserr.effortlessbuilding.utilities.KeyBindings;
 import net.worseuserr.effortlessbuilding.screen.ModifiersScreen;
-import net.worseuserr.effortlessbuilding.screen.RadialMenu;
+import net.worseuserr.effortlessbuilding.menu.RadialMenu;
 import net.worseuserr.effortlessbuilding.screen.RandomizerScreen;
 import net.worseuserr.effortlessbuilding.screen.RandomizerTooltipComponent;
 import net.worseuserr.effortlessbuilding.item.RandomizerToolItem;
