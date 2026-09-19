@@ -101,6 +101,7 @@
   "effortlessbuilding.message.too_hard": "Some blocks exceeded the maximum hardness",
   "effortlessbuilding.message.protected_tile_entity": "Some blocks were protected (tile entities)",
   "effortlessbuilding.message.world_border": "Some blocks are outside the world border or build height",
+  "effortlessbuilding.message.outside_reach": "Some blocks are outside your reach",
   "effortlessbuilding.message.not_operator": "Only admins can edit functional settings.",
   "effortlessbuilding.message.welcome_message": "Thank you for using Effortless Building! To get started, hold %s to open the build menu.",
   "effortlessbuilding.message.build_mode_hint": "You have activated a build mode! With a block in hand, right-click to pick the starting position. Aim somewhere else, then right-click again to build the shape. To deactivate, hold %s and select Disable.",

@@ -16,13 +16,13 @@
     "environment": "*",
     "entrypoints": {
         "main": [
-            "nl.requios.effortlessbuilding.EffortlessBuilding"
+            "net.worseuserr.effortlessbuilding.EffortlessBuilding"
         ],
         "client": [
-            "nl.requios.effortlessbuilding.EffortlessBuildingClient"
+            "net.worseuserr.effortlessbuilding.EffortlessBuildingClient"
         ],
         "modmenu": [
-            "nl.requios.effortlessbuilding.ModMenuIntegration"
+            "net.worseuserr.effortlessbuilding.ModMenuIntegration"
         ]
     },
     "mixins": [
